@@ -3,13 +3,13 @@
         padding: 0;
     }
     .healthBody{
-        background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(images/summer-background-9WXPTBE.jpg) repeat ;
+        background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../../images/summer-background-9WXPTBE.jpg) repeat ;
         /* background-size: cover; */
 
     }
 
     .casualBody{
-        background: linear-gradient(rgba(0, 0, 0, 0.955), rgba(0, 0, 0, .8)), url(images/hands-holding-juice-glasses-by-the-pool-summer-tim-PF2WH6J.jpg) center repeat ;
+        background: linear-gradient(rgba(0, 0, 0, 0.955), rgba(0, 0, 0, .8)), url(../../images/hands-holding-juice-glasses-by-the-pool-summer-tim-PF2WH6J.jpg) center repeat ;
         /* background-size: cover; */
 
     }
