@@ -1,0 +1,296 @@
+* {
+        margin: 0;
+        padding: 0;
+    }
+    .healthBody{
+        background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(images/summer-background-9WXPTBE.jpg) repeat ;
+        /* background-size: cover; */
+
+    }
+
+    .casualBody{
+        background: linear-gradient(rgba(0, 0, 0, 0.955), rgba(0, 0, 0, .8)), url(images/hands-holding-juice-glasses-by-the-pool-summer-tim-PF2WH6J.jpg) center repeat ;
+        /* background-size: cover; */
+
+    }
+
+    .athleteBody{
+        background: linear-gradient(rgba(0, 0, 0, 0.955), rgba(0, 0, 0, .8)), url(../../images/two-portions-of-green-spinach-smoothie-with-banana-M5BWFKU.jpg) center repeat ;
+        /* background-size: cover; */
+
+    }
+
+    .weightBody{
+        background: linear-gradient(rgba(0, 0, 0, 0.955), rgba(0, 0, 0, .8)), url(../../images/fruit-and-vegetables-smoothie-93CPVGR.jpg) center repeat ;
+        /* background-size: cover; */
+    }
+    
+    .container {
+        width: 100vw;
+        /* height: 300vh; */
+        font-family: 'Montserrat', sans-serif;
+      
+        position: relative;
+    }
+    
+  
+   
+    
+    .top-nav {
+        height: 20vh;
+        width: 100%;
+   
+        position: fixed;
+        top:0;
+        z-index : 50;
+        transition: top .4s;
+    }
+    
+    
+    
+    .nav-list {
+        list-style: none;
+        width: 80%;
+        margin: auto;
+        height: inherit;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .nav-list li {
+        perspective: 500px;
+    }
+    
+    .nav-link {
+        text-decoration: none;
+        font-family: 'Slabo 27px', serif;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #ccc;
+        background-color: #000;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+        display: block;
+        position: relative;
+        transform-style: preserve-3d;
+        transform-origin: top;
+        transition: transform .3s;
+    }
+    .status{
+        color: orange;
+    }
+    
+    .nav-link:hover {
+        transform: rotateX(90deg);
+    }
+    
+    .nav-link::after {
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        bottom: -100%;
+        background-color: #000;
+        padding: inherit;
+        color: #0dea1c;
+        transform: rotateX(-90deg);
+        transform-origin: top;
+    }
+ 
+    
+
+  /* styling contents */
+    .juiceDisplay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        
+        z-index: 10;
+
+    }
+    .team {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5rem 20rem 5rem;
+        position: relative;
+
+      }
+      
+      .cards-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 8rem;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      
+      .card {
+        width: 27rem;
+        height: 35rem;
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+        border-radius: 0.5rem;
+        position: relative;
+        margin-bottom: 5px;
+      }
+      
+      .card-img-wrapper {
+        width: 100%;
+        height: 100%;
+        background-color: #5f0544;
+        border-radius: 0.5rem;
+      }
+      
+      .card-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+        border-radius: 0.5rem;
+        transition: opacity 0.3s;
+      }
+      
+      .card:hover .card-img-wrapper img {
+        opacity: 0.5;
+      }
+      
+      .card-info {
+        position: absolute;
+        bottom: 0;
+        padding: 2rem;
+        text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+      }
+      
+      .card:hover .card-info {
+        bottom: 2rem;
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .card-info h2 {
+        font-family: "Baloo Da 2", serif;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: 300;
+        color: #eee;
+      }
+      
+      .card-info h3 {
+        font-family: "Muli", serif;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #a52a2a;
+        margin-bottom: 1rem;
+      }
+      
+      .card-info p {
+        font-family: "Baloo da 2", serif;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        font-weight: 300;
+        color: #eee;
+        width: 80%;
+        margin-bottom: 2rem;
+      }
+      
+      .card-info button {
+        width: 10rem;
+        height: 3rem;
+        background-color: #c29525;
+        border: none;
+        font-family: "Baloo Da 2", serif;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        color: #eee;
+        border-radius: 0.3rem;
+        box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      @media (max-width: 1500px) {        
+      
+        .card {
+          width: 34rem;
+        }
+      
+        
+      }
+
+
+
+
+
+
+  @media(max-width: 1200px) {
+    .top-nav {
+        background: #010101;
+    }
+
+    .nav-list {
+        justify-content: center;
+    }
+
+    .nav-link {
+        font-size: 25px;
+    }}
+
+    @media(max-width: 900px) {   
+        
+             .nav-list {
+            width: 70%;
+            flex-wrap: wrap;
+            align-content: center;
+        }    
+        .nav-link {
+            margin: 3px 0;
+        }   
+    }
+
+    @media(max-width: 750px) {
+        .nav-list {
+            width: 60%;
+        }          
+    
+    }
+
+    @media(max-width: 550px) {        
+    
+        
+    }
+
+    @media(max-width: 450px) {
+
+        .nav-list {
+            width: 50%;
+        }
+    }
+    
+
+ 
+
+  
