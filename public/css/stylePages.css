@@ -1,0 +1,310 @@
+* {
+        margin: 0;
+        padding: 0;
+    }
+    .healthBody{
+        background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(https://bn1301files.storage.live.com/y4mjjaFof4SPndfhlqe_HCAeN9WPvVDbqAKMh4BO4sY9OQLYUXcy0OXrJonDcc4NvyO7fBRyrKmKsKplwJgPBvA7lppeF0GaVRv1XyOoaDFaWVT9j7KwqNDXh6JQG_DSpb7T5nk3jh27Dpm6bxeAtACKuy1k7YNDvauorRJXkp4oI-rFB3ZYJ02_CjUVEW5gqVl?width=8256&height=5504&cropmode=none) repeat ;
+        /* background-size: cover; */
+
+    }
+
+    .casualBody{
+        background: linear-gradient(rgba(0, 0, 0, 0.955), rgba(0, 0, 0, .8)), url(https://bn1301files.storage.live.com/y4mVdgFDi05CPy6oZRRtUTpH1tHpjrIIa88uzu_35ovS-EOABIY2gdlUPUTAALL62XQsqxmcHR268eTOtiN-gICghprLhL4V2x0ZpCoz8DB1e7_mnqTypHpFK4sw0UJ3I7LVDTzilQ2enXwS6KUnp8bt75OpBba8FoOWyXkbLwv84VS8ZwxKUCsbhSUMRiU2UCe?width=5632&height=4004&cropmode=none) center repeat ;
+        /* background-size: cover; */
+
+    }
+
+    .athleteBody{
+        background: linear-gradient(rgba(0, 0, 0, 0.955), rgba(0, 0, 0, .8)), url(https://bn1301files.storage.live.com/y4mKmUCHj2EF0XaaIzZ28gxOF6CU4vG1xtqDqszua-QosZ3Kq6DVJVkIrrgw3saXUQBroRd4XrSL5ACKdz6AXEBfJTZM52vJ-k4FiLoV8swLaPV4cygqveC390TVVdOhLcN37jSlEXn4BCR6OjVCjXey_Q2T3sYrfHBME_OpEvchNUaAa429Ft1tFOEajE53ENt?width=5588&height=3725&cropmode=none) center repeat ;
+        /* background-size: cover; */
+
+    }
+
+    .weightBody{
+        background: linear-gradient(rgba(0, 0, 0, 0.955), rgba(0, 0, 0, .8)), url(https://bn1301files.storage.live.com/y4mHWffCP4qNqmzsDk9VRdB-ICWUo92qrp0CUnsrs8vlKnL2eu9wPAHatKluWAdRbWTlFdCW2WGNc0wk5TSdH9XCYwCKFZDaIa0EplwAduhmz9B4fvDxbTOgm4gWVNbXuJTALNv85777CWL9E3Uhfsy1bZBBaOXVdDtoflaQsgKff-HeX1D335GyOphFlvGfv6l?width=5760&height=3840&cropmode=none) center repeat ;
+        /* background-size: cover; */
+    }
+    
+    .container {
+        width: 100vw;
+        /* height: 300vh; */
+        font-family: 'Montserrat', sans-serif;
+      
+        position: relative;
+    }
+    
+  
+   
+    
+    .top-nav {
+        height: 20vh;
+        width: 100%;
+   
+        position: fixed;
+        top:0;
+        z-index : 50;
+        transition: top .4s;
+    }
+    
+    
+    
+    .nav-list {
+        list-style: none;
+        width: 80%;
+        margin: auto;
+        height: inherit;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .nav-list li {
+        perspective: 500px;
+    }
+    
+    .nav-link {
+        text-decoration: none;
+        font-family: 'Slabo 27px', serif;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #ccc;
+        background-color: #000;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+        display: block;
+        position: relative;
+        transform-style: preserve-3d;
+        transform-origin: top;
+        transition: transform .3s;
+    }
+    .status{
+        color: orange;
+    }
+    
+    .nav-link:hover {
+        transform: rotateX(90deg);
+    }
+    
+    .nav-link::after {
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        bottom: -100%;
+        background-color: #000;
+        padding: inherit;
+        color: #0dea1c;
+        transform: rotateX(-90deg);
+        transform-origin: top;
+    }
+ 
+    
+
+  /* styling contents */
+
+  .section-heading {
+    font-family: "Muli", serif;
+    font-size: 5rem;
+    font-weight: 300;
+    color: #f80000;
+    margin-bottom: 6rem;
+  }
+
+ 
+  
+
+  
+    .juiceDisplay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        
+        z-index: 10;
+
+    }
+    .team {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5rem 20rem 5rem;
+        position: relative;
+
+      }
+      
+      .cards-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 8rem;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      
+      .card {
+        width: 27rem;
+        height: 35rem;
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+        border-radius: 0.5rem;
+        position: relative;
+        margin-bottom: 5px;
+      }
+      
+      .card-img-wrapper {
+        width: 100%;
+        height: 100%;
+        background-color: #5f0544;
+        border-radius: 0.5rem;
+      }
+      
+      .card-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+        border-radius: 0.5rem;
+        transition: opacity 0.3s;
+      }
+      
+      .card:hover .card-img-wrapper img {
+        opacity: 0.5;
+      }
+      
+      .card-info {
+        position: absolute;
+        bottom: 0;
+        padding: 2rem;
+        text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+      }
+      
+      .card:hover .card-info {
+        bottom: 2rem;
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .card-info h2 {
+        font-family: "Baloo Da 2", serif;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: 300;
+        color: #eee;
+        margin-bottom: 1rem;
+      }
+      
+      .card-info h3 {
+        font-family: "Muli", serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #12ec24;
+        margin-bottom: .2rem;
+      }
+      
+      .card-info p {
+        font-family: "Baloo da 2", serif;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        font-weight: 300;
+        color: #eee;
+        width: 80%;
+        margin-bottom: 2rem;
+      }
+      
+      .card-info button {
+        width: 10rem;
+        height: 3rem;
+        background-color: #c29525;
+        border: none;
+        font-family: "Baloo Da 2", serif;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        color: #eee;
+        border-radius: 0.3rem;
+        box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      @media (max-width: 1500px) {        
+      
+        .card {
+          width: 34rem;
+        }
+      
+        
+      }
+
+
+
+
+
+
+  @media(max-width: 1200px) {
+    .top-nav {
+        background: #010101;
+    }
+
+    .nav-list {
+        justify-content: center;
+    }
+
+    .nav-link {
+        font-size: 25px;
+    }}
+
+    @media(max-width: 900px) {   
+        
+             .nav-list {
+            width: 70%;
+            flex-wrap: wrap;
+            align-content: center;
+        }    
+        .nav-link {
+            margin: 3px 0;
+        }   
+    }
+
+    @media(max-width: 750px) {
+        .nav-list {
+            width: 60%;
+        }          
+    
+    }
+
+    @media(max-width: 550px) {        
+    
+        
+    }
+
+    @media(max-width: 450px) {
+
+        .nav-list {
+            width: 50%;
+        }
+    }
+    
+
+ 
+
+  

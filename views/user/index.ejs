@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Slabo+27px" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/stylePages.css">
+
+        <%- include('../includes/pageTitle.ejs') %>
+    </head>
+<body>
+    
+    <div class="container">
+        <div class="banner">
+            <div class="logo">
+                <a href="/"><img src="images/fresh-juices-logo.jpg"></a>
+            </div>
+            <div class="btn-wrapper">
+                <button class="banner-btn"> <h1 class="njsHeading">Need Some Juice</h1>
+                    <div class="videojuice">
+                        <video autoplay  width="680" height="620" controls loop   >
+                            <source src="images/mango-juice-drop.mp4" type="video/mp4">                   
+                          </video>
+                    </div>
+                   
+                </button>
+            </div>
+        </div>
+       
+
+        <div class="nav-wrapper">
+            <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+
+            <nav class="top-nav">
+                <ul class="nav-list">
+                    <li>
+                        <a href="/" class="nav-link status" data-text="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="/health" class="nav-link " data-text="Health">Health</a>
+                    </li>
+                    <li>
+                        <a href="/weightloss" class="nav-link" data-text="WeightLoss">WeightLoss</a>
+                    </li>
+                    <li>
+                        <a href="/casual" class="nav-link" data-text="Casual">Casual</a>
+                    </li>
+                    <li>
+                        <a href="/athlete" class="nav-link" data-text="Athlete">Athlete</a>
+                    </li>
+
+                    <% if (isAuthenticated) { %>
+
+                    <li>
+                        <a href="/addJuice" class="nav-link " data-text="Add">Add</a>
+                    </li>
+                    <% } %>
+                    
+                    <li>
+                        <a href="/login" class="nav-link " data-text="login">Login</a>
+                    </li>
+                    <li>
+                        <a href="/signup" class="nav-link " data-text="Signup">signup</a>
+                    </li>
+                   
+                        <li>
+                            <form action="/logout" method="post">                       
+                            <button type="submit">Logout</button>
+                        </form>
+                        </li>
+                       
+                </ul>
+            </nav>
+
+            <nav class="bottom-nav">
+                <div class="juiceSummary">
+                    <h1>Need some Juice</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, quo atque a inventore non, et deserunt sint voluptas animi, impedit hic totam doloremque! Nostrum accusamus laudantium recusandae exercitationem sit sunt! Temporibus voluptates porro obcaecati perferendis, expedita eum dignissimos inventore illo ab repellat labore reiciendis natus quos ad dolor numquam harum fuga quaerat alias, veritatis accusamus facilis a adipisci. Culpa, unde fugiat assumenda ea id mollitia ipsam nostrum dolore inventore quidem eum omnis atque explicabo porro! Fuga architecto doloremque aut quo pariatur, deleniti dolore eum hic debitis iste nemo natus laudantium ducimus esse aliquid nobis laborum sed? Dignissimos recusandae incidunt, accusantium perspiciatis deleniti necessitatibus nostrum dolorem veritatis, aliquid beatae provident deserunt praesentium aperiam perferendis saepe earum aut quis natus placeat sed veniam porro. Exercitationem totam dolorum minima soluta magni earum velit voluptatibus reiciendis ab amet expedita repellat, ea quam, vero dolorem deleniti perspiciatis, autem assumenda perferendis asperiores. Sit ea, aspernatur ipsam voluptate dolorem perferendis in nesciunt cumque consequuntur natus architecto at, quibusdam laborum optio accusamus incidunt esse voluptates maiores. Fugit veniam eaque eveniet blanditiis, est numquam necessitatibus aut maxime recusandae repudiandae voluptatum voluptates itaque! Maxime ducimus voluptatibus consequuntur adipisci quasi. Ea a doloremque omnis non amet odit molestiae ad deleniti cupiditate.</p>
+
+                </div>
+                
+            
+            </nav>
+        </div>
+
+    </div>
+
+    
+
+
+    <script src="/js/juice.js"></script>
+</body>
+</html>
