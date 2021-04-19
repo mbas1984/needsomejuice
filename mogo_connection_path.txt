@@ -1,1 +1,0 @@
-mongodb+srv://juice:<password>@cluster0.ittcq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
