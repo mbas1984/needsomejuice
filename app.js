@@ -9,7 +9,7 @@ const MongoDBStore = require('connect-mongodb-session')(session);
 const juiceRoutes = require('./routes/juiceUser');
 const User = require('./models/user');
 
-const MONGODB_URI ='mongodb+srv://juice:root@cluster0.ittcq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const MONGODB_URI ='mongodb+srv://juice:<password>@cluster0.ittcq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 
 const app = express();
